@@ -1,0 +1,21 @@
+{% extends "base.twig" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+    Sample Home Page
+    <script type="text/javascript">
+        Vue.component('modal', {
+            template: '#modal-template'
+        })
+    
+        var app = new Vue({
+            el: '#app',
+            delimiters: ["${","}"],
+            data: {
+                test: "works"
+            },
+            methods: {
+            }
+        })
+	</script>
+{% endblock %}
+{% block foot %}{% endblock %}
